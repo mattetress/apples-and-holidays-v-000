@@ -40,12 +40,7 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash.each do |hash_season, holiday|
-    if hash_season == season
-      hash_season << holiday_name
-      binding.pry
-    end
-  end
+  holiday_hash[season.to_sym][holiday_name.to_sym] = supply_array
 end
 
 def all_winter_holiday_supplies(holiday_hash)
