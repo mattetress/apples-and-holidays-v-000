@@ -64,6 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
       puts "  #{holdiay.to_s.split("_").capitalize!.join(" ")}: #{supply_array.capitalize!.join(", ")}"
     end
   end
+  binding.pry
 end
 
 def all_holidays_with_bbq(holiday_hash)
